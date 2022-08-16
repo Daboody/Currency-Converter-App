@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.829);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        height: 160vh;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        height: 150vh;
+    }
+}
+.container .app-wrapper{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+}
+.app-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.fields-wrapper{
+    background-color: rgba(209, 183, 170, 0.418);
+    width: 800px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .fields-wrapper {
+        width: 300px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .fields-wrapper {
+        width: 480px;
+    }
+}
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .first-row {
+        flex-flow: column;
+        gap: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .first-row {
+        flex-flow: column;
+        gap: 10px;
+    }
+}
+
+/* Number Field */
+input[type= "text"]{
+    padding: 10px;
+    width: 200px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    input[type= "text"] {
+        padding: 10px;
+        font-size: 16px;
+        width: 250px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    input[type= "text"] {
+        padding: 15px;
+        width: 350px;
+    }
+}
+input[type= "text"]:focus {
+    outline: none;
+}
+.element-wrapper {
+    display: flex;
+    flex-flow: column;
+}
+.element-wrapper label {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .element-wrapper label {
+        font-size: 23px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .element-wrapper label {
+        font-size: 23px;
+    }
+}
+.element-wrapper select {
+    padding: 9px;
+    width: 200px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .element-wrapper select {
+        padding: 10px;
+        width: 250px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .element-wrapper select {
+        padding: 15px;
+        width: 350px;
+        font-size: 18px;
+    }
+}
+.first-row i {
+    font-size: 25px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.829);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .first-row i {
+        font-size: 20px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .first-row i {
+        font-size: 25px;
+    }
+}
+.second-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .second-row {
+        flex-flow: column;
+        gap: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .second-row {
+        flex-flow: column;
+        gap: 15px;
+    }
+}
+.second-row button {
+padding: 10px;
+width: 280px;
+font-size: 18px;
+font-weight: bold;
+background-color: rgba(0, 0, 0, 0.829);
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: .3s;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .second-row button {
+        width: 200px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .second-row button {
+        width: 280px;
+        padding: 15px;
+    }
+}
+.second-row button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .3s;
+    box-shadow: 0px 0px 21px -3px #000;
+}
+.second-row span {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.829);
+    width: 350px;
+    text-align: center;
+    font-weight: bold;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .second-row span {
+        font-size: 22px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .second-row span {
+        font-size: 28px;
+    }
+}
+
+/* Static Numbers */
+.currency-details {
+    width: 250px;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(209, 183, 170, 0.418);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .currency-details {
+        font-size: 22px;
+    }
+}
+.currency-details :nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.currency-details :nth-child(2) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}

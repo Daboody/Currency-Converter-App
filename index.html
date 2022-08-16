@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Currency Converter App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="app-wrapper">
+            <h2>Currency Converter</h2>
+            <div class="fields-wrapper">
+                <div class="first-row">
+                    <div class="element-wrapper">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" placeholder="Enter valid number">
+                    </div>
+                    <div class="element-wrapper">
+                        <label for="from">From</label>
+                        <select name="currency-from" id="from">
+                            <option value="default" selected disabled>Select currency</option>
+                            <option value="us">US dollar</option>
+                            <option value="or">Omani rial</option>
+                            <option value="sd">Sudanese pound</option>
+                            <option value="eg">Egyptian pound</option>
+                            <option value="uae">UAE dirham</option>
+                        </select>
+                    </div>
+                    <i class="fa-solid fa-repeat"></i>
+                    <div class="element-wrapper">
+                        <label for="to">To</label>
+                        <select name="currency-to" id="to">
+                            <option value="default" selected disabled>select country</option>
+                            <option value="sd">Sudanese pound</option>
+                            <option value="eg">Egyptian pound</option>
+                            <option value="om">Omani rial</option>
+                            <option value="ksa">Saudi riyal</option>
+                            <option value="uae">UAE dirham</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <button>Convert</button>
+                    <span></span>
+                </div>
+            </div>
+            <div class="currency-details">
+                <div>
+                    <span>1$ = </span>
+                </div>
+                <div>
+                    <span>572.26 SDG</span>
+                    <span>19.14 EGP</span>
+                    <span>0.38 OMR</span>
+                    <span>3.75 SAR</span>
+                    <span>3.67 UAE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
